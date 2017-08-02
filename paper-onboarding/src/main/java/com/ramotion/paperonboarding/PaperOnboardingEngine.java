@@ -6,6 +6,7 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -468,8 +469,10 @@ public class PaperOnboardingEngine implements PaperOnboardingEngineDefaults {
         ViewGroup contentTextView = (ViewGroup) vi.inflate(R.layout.onboarding_text_content_layout, mContentTextContainer, false);
         TextView contentTitle = (TextView) contentTextView.getChildAt(0);
         contentTitle.setText(PaperOnboardingPage.getTitleText());
+        contentTitle.setTextColor(ContextCompat.getColor(mAppContext, android.R.color.white));
         TextView contentText = (TextView) contentTextView.getChildAt(1);
         contentText.setText(PaperOnboardingPage.getDescriptionText());
+        contentText.setTextColor(ContextCompat.getColor(mAppContext, android.R.color.white));
         return contentTextView;
     }
 

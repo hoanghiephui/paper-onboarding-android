@@ -41,8 +41,11 @@ public class PaperOnboardingActivity extends AppCompatActivity {
     // Just example data for Onboarding
     private ArrayList<PaperOnboardingPage> getDataForOnboarding() {
         // prepare data
-        PaperOnboardingPage scr1 = new PaperOnboardingPage("Hotels", "All hotels and hostels are sorted by hospitality rating",
-                Color.parseColor("#678FB4"), R.drawable.hotels, R.drawable.key);
+        PaperOnboardingPage scr1 = new PaperOnboardingPage("Welcome to Food",
+                "Introducing Yonia, with more than 6 thousand\n" +
+                        "receipes and amazing features yonia is your\n" +
+                        "best choice to make any cook great.",
+                Color.parseColor("#fc5328"), R.drawable.icon, R.drawable.key);
         PaperOnboardingPage scr2 = new PaperOnboardingPage("Banks", "We carefully verify all banks before add them into the app",
                 Color.parseColor("#65B0B4"), R.drawable.banks, R.drawable.wallet);
         PaperOnboardingPage scr3 = new PaperOnboardingPage("Stores", "All local stores are categorized for your convenience",
